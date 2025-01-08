@@ -49,7 +49,15 @@ export default function navbar() {
                 </Link>
               </li>
               <li>
-                <a href="/contact">Contact</a>
+              <Link
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  offset={-70} // Adjust this value based on your navbar height
+                  duration={500}
+                >
+                  contact
+                </Link>
               </li>
             </ul>
           </div>

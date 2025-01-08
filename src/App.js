@@ -4,6 +4,7 @@ import Navbar from "./navbar";
 import Home from "./Home/Home";
 import About from "./about/about";
 import Work from "./work/work";
+import Contact from "./contact/contact";
 
 function App() {
   return (
@@ -24,6 +25,9 @@ function App() {
       </div>
       <div id="work">
         <Work />
+      </div>
+      <div id="contact">
+        <Contact />
       </div>
     </div>
   );
