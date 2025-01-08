@@ -1,0 +1,19 @@
+.custom-heading {
+  color: white;
+  font-weight: 900;
+  /* margin: auto; */
+}
+.divider {
+  width: 75%; /* Make the divider full-width */
+  margin-top: 20px; /* Add space above the divider */
+  margin-bottom: 20px; /* Add space below the divider */
+}
+
+.divider hr {
+  border: none; /* Remove the default border */
+  height: 1px; /* Set the divider height */
+  background-color: white; /* Set the divider color */
+}
+.coontainer {
+  margin: 44px 100px 0px 100px;
+}

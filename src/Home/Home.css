@@ -1,0 +1,75 @@
+.Container {
+  margin-top: 100px;
+}
+.Info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the left */
+}
+.custom-font {
+  color: white;
+  font-size: 1rem; /* Adjust font size */
+  margin: 0; /* Remove default margin */
+  margin-bottom: 10px;
+}
+.custom-fonth {
+  color: #a6bbcc;
+  font-size: 70px;
+  margin: 0; /* Remove default margin */
+  margin-bottom: 5px;
+}
+/* Card Container */
+.card {
+  height: 410px;
+  border-radius: 30px;
+  width: 300px; /* Set the width of the card */
+  border: 1px solid #ddd; /* Add a border */
+  overflow: hidden; /* Ensure content doesn't overflow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow */
+  background-color: #fff; /* White background */
+  transition: transform 0.3s ease; /* Add hover effect */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Lift the card on hover */
+}
+
+/* Card Image */
+.card-image {
+  width: 100%; /* Make the image fill the card width */
+  height: 200px; /* Set a fixed height for the image */
+  object-fit: cover; /* Ensure the image covers the area */
+}
+
+/* Card Content */
+.card-content {
+  padding: 16px; /* Add padding inside the card */
+}
+
+/* Card Title */
+.card-title {
+  font-size: 1.5rem; /* Set the title size */
+  margin-bottom: 8px; /* Add space below the title */
+}
+
+/* Card Description */
+.card-description {
+  font-size: 1rem; /* Set the description size */
+  color: #666; /* Gray text color */
+  margin-bottom: 16px; /* Add space below the description */
+}
+
+/* Card Button */
+.card-button {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #007bff; /* Blue button color */
+  color: #fff; /* White text color */
+  text-decoration: none; /* Remove underline */
+  border-radius: 4px; /* Rounded button corners */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.card-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
