@@ -1,4 +1,9 @@
-export default function work() {
+import { useEffect, useState } from "react";
+
+export default function Work() {
+
+  const [projects,SetProjects]=useState([{Title:'Kiosk'}]);
+
   return (
     <div>
       <div className="Container">
@@ -10,28 +15,16 @@ export default function work() {
             <hr style={{ color: "white" }}></hr>
           </div>
         </div>
-        <div className="coontainer">
-          <div className="row">
-
-            <div>
-              {/* <iframe src="./assets/images/Screenshot_1.png" style={{Width:"300px"}}></iframe> */}
+        {projects.map((project, index) => (
+          <div className="card" key={index}>
+            <h2>{project.Title}</h2>
+            <div className="row">
+              <div className="card-content">
+                <h1>{project.Title}</h1>
+              </div>
             </div>
-            {/* <div className="col-md-6" style={{ width: "50%" }}>
-            {techElements.map((item, index) => {
-              return (
-                <div key={index}>
-                  <h2 className="custom-heading">{item.name}</h2>
-                  <p
-                    className="custom-font"
-                    style={{ fontSize: "small", textDecoration: "underline" }}
-                  >
-                    {item.yearsOfExperience}
-                  </p>
-                </div>
-              );
-            })} */}
           </div>
-        </div>
+        ))}
       </div>
     </div>
   );
